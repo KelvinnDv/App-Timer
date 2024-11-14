@@ -1,5 +1,74 @@
+
+
 .App {
   text-align: center;
+}
+
+body{
+  background-color: rgb(0, 0, 0, 0.9);
+}
+
+body:hover {
+  background-color: color-change 3s infinite alternate linear;
+}
+
+h1,h2 {
+  color: #61dafb;
+  font-family: "Edu AU VIC WA NT Pre", cursive;
+}
+
+h1:hover {
+  color: white;
+  animation: color-change 3s infinite alternate linear;
+}
+
+h2:hover {
+  color: white;
+  animation: color-change 3s infinite alternate linear;
+}
+
+.btn1 {
+  color: blue;
+}
+
+.btn1:hover {
+  color: white;
+  background-color: black;
+}
+
+.btn2 {
+  color: lightblue;
+}
+
+.btn2:hover {
+  color: white;
+  background-color: red;
+}
+
+.btn3 {
+  color: skyblue;
+}
+
+.btn3:hover {
+  color: white;
+  background-color: blue;
+}
+
+.lap {
+  color: rgb(255, 255, 255);
+}
+
+.log {
+  color: black;
+  transition: all 0.5s 
+}
+
+.log:hover {
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  transform: scaleY(1.9);
+  font-weight: bold;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .App-logo {
@@ -21,7 +90,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .App-link {
@@ -35,4 +104,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+@keyframes color-change {
+  0% { background-color: red; }
+  16% { background-color: orange; }
+  32% { background-color: yellow; }
+  48% { background-color: green; }
+  64% { background-color: blue; }
+  80% { background-color: indigo; }
+  100% { background-color: violet; }
 }
